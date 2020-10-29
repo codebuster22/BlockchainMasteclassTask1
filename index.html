@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <title>Title</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between posFixed">
+    <h1 class="nav-item ">Blockchain Masterclass Task 1</h1>
+    <div class="buttonWrapper">
+        <button id="clear-task-list" class="nav-item btn btn-danger clearList">Clear List</button>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <div class="block1 container">
+        <div class="shoppingList row justify-content-center row">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="description row justify-content-center">
+            Note:- This list is not for faint hearted people.
+        </div>
+        <div class="input container">
+            <div class="input-group mb-1">
+                <input id="task-input" type="text" class="form-control input text" placeholder="Add Tasks" aria-label="Add Tasks" aria-describedby="button-addon2">
+            </div>
+            <div class="mb-1">
+                <input id="deadline-date" class="" type="date" id="birthday" name="task-date">
+                <input id="deadline" type="time" name="task-time" value="13:30">
+            </div>
+            <div class="input-group-append mb-3 row justify-content-center">
+                <button id="task-input-submit" class="btn btn-primary" role="button">Add To List</button>
+            </div>
+        </div>
+        <div class="list">
+            <ul id="task-list" class="list container">
+
+            </ul>
+        </div>
+        <div class="card text-black-50">
+            <div class="card-header">
+                Laugh out Loud
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p id="joke-setup"></p>
+                    <p id="joke-delivery"></p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="JavaScript/main.js"></script>
+</body>
+</html>
